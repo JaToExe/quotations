@@ -1,0 +1,51 @@
+nav {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    position: fixed;
+
+    .reload {
+        width: 32px;
+        height: 32px;
+
+        background-image: url(../assets/48-replay.svg);
+        background-size: 100% 100%;
+    }
+
+    .lanugage {
+        height: 32px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        .en {
+            width: 32px;
+            height: 32px;
+
+            background: url(../assets/united-kingdom.png);
+            background-size: 100% 100%;
+        }
+
+        .pl {
+            width: 32px;
+            height: 32px;
+
+            background: url(../assets/poland.png);
+            background-size: 100% 100%;
+        }
+
+        .active {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

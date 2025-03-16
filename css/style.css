@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #212529;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+}
+nav .reload {
+  width: 32px;
+  height: 32px;
+  background-image: url(../assets/48-replay.svg);
+  background-size: 100% 100%;
+}
+nav .lanugage {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+nav .lanugage .en {
+  width: 32px;
+  height: 32px;
+  background: url(../assets/united-kingdom.png);
+  background-size: 100% 100%;
+}
+nav .lanugage .pl {
+  width: 32px;
+  height: 32px;
+  background: url(../assets/poland.png);
+  background-size: 100% 100%;
+}
+nav .lanugage .active {
+  width: 50px;
+  height: 50px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+main .text .quote {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #E5E5E5;
+  text-shadow: #E5E5E5 0px 0 80px;
+}
+main .text .author {
+  font-family: "Meow Script", cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  position: absolute;
+  margin-top: 1.5rem;
+  padding-left: 20px;
+  box-sizing: border-box;
+  color: #ADB5BD;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    width: 100px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: end;
+    margin-left: calc(100% - 100px);
+  }
+  main {
+    padding-left: 10%;
+    box-sizing: border-box;
+  }
+  main .quote {
+    font-size: 7rem !important;
+  }
+  main .author {
+    font-size: 4rem !important;
+    margin-top: 5rem !important;
+    font-weight: 900 !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
