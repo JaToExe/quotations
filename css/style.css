@@ -73,9 +73,10 @@ nav .reload {
   background-size: 100% 100%;
 }
 nav .lanugage {
+  width: 100%;
   height: 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   gap: 10px;
 }
@@ -84,12 +85,14 @@ nav .lanugage .en {
   height: 32px;
   background: url(../assets/united-kingdom.png);
   background-size: 100% 100%;
+  transition: width 0.5s, height 0.5s;
 }
 nav .lanugage .pl {
   width: 32px;
   height: 32px;
   background: url(../assets/poland.png);
   background-size: 100% 100%;
+  transition: width 0.5s, height 0.5s;
 }
 nav .lanugage .active {
   width: 50px;
@@ -104,6 +107,9 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+main .text {
+  max-width: 50%;
 }
 main .text .quote {
   font-family: "Roboto", sans-serif;
